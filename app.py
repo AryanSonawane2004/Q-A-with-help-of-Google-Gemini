@@ -47,7 +47,7 @@ st.title("Enhanced Q & A Chatbot with Google Gemini")
 st.sidebar.title("Settings")
 api_key = st.sidebar.text_input("Enter your API Key", type="password")
 
-llm = st.sidebar.selectbox("Select your model", ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash", "gemini-1.5-pro"])
+llm = st.sidebar.selectbox("Select your model", ["gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"])
 
 temperature = st.sidebar.slider("Temperature", min_value=0.0, max_value=1.0, value=0.7)
 max_tokens = st.sidebar.slider("Max Tokens", min_value=100, max_value=4096, value=1500, step=50)
